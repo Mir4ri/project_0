@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,600');
+@import './componets/_header.scss';
+@import './componets/_general.scss';
+@import './componets/_footer.scss';
+
+body {
+    font-family: 'Asap',sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+h1 {
+    font-size: 64px;
+}
+
+.container {
+        width: 1170px;
+        margin: 0 auto;
+}
+
