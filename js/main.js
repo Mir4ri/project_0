@@ -13,7 +13,7 @@
                        event.preventDefault();
                        var menuHeight = $("html").outerHeight(true);
                        $('html, body').animate({
-                           scrollTop: target.offset().top - 200
+                           scrollTop: target.offset().top
                        }, 1000);
                    }
                }
