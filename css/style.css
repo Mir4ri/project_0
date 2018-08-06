@@ -235,6 +235,21 @@
   outline-color: #FFDB6B;
 }
 
+@media screen and (max-width: 1440px) {
+  .header .hero .hero__img__1 {
+    left: 2%;
+  }
+  .header .hero .hero__img__2 {
+    left: 72%;
+  }
+  .header .hero .hero__img__3 {
+    left: 14%;
+  }
+  .header .hero .hero__img__4 {
+    left: 64%;
+  }
+}
+
 .materials {
   background: #F7F9FC;
   padding-top: 69px;

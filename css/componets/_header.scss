@@ -176,3 +176,24 @@
         }
     }
 }
+
+// Media req
+
+@media screen and (max-width: 1440px) {
+    .header {
+        .hero {
+            .hero__img__1 {
+                left: 2%;
+            }
+            .hero__img__2 {
+                left: 72%;
+            }
+            .hero__img__3 {
+                left: 14%;
+            }
+            .hero__img__4 {
+                left: 64%;
+            }
+        }
+    }
+}
