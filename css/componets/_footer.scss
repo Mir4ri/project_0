@@ -68,3 +68,16 @@
         }
     }
 }
+
+// MEDIA req
+@media screen and (max-width: 720px) {
+    .footer {
+        overflow: hidden;
+        .flex {
+            .f-contacts {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}

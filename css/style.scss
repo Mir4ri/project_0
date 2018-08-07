@@ -31,3 +31,10 @@ h1 {
         margin: 0 auto;
 }
 
+// Media req
+
+@media screen and (max-width: 720px) {
+    .container {
+        width: 620px;
+    }
+}

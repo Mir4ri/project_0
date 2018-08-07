@@ -97,6 +97,7 @@
 
 .header .hero .hero__title .hero__title__midle .hero__title__midle--bold {
   margin: 0;
+  margin-bottom: 20px;
   letter-spacing: 8px;
   text-transform: uppercase;
   font-size: 72px;
@@ -106,6 +107,9 @@
   margin: 0;
   font-weight: 100;
   margin-bottom: 20px;
+  font-family: 'Gilroy', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .header .hero .hero__title .hero__title__down {
@@ -174,6 +178,8 @@
   margin: 0;
   font-size: 58px;
   padding-bottom: 20px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bolder;
 }
 
 .header .hero__services .hero__services__title .hero__services__down {
@@ -202,6 +208,8 @@
   display: -ms-flexbox;
   display: flex;
   padding: 1em 0;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bolder;
 }
 
 .header .hero__services .hero__services__list .hero__serviecs__list__ul .hero__serviecs__list__ul__item svg {
@@ -221,6 +229,8 @@
   transition: all .6s ease;
   font-size: 14px;
   margin-left: 413px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bolder;
 }
 
 .header .hero__services .hero__services__list .hero__services__list__button:hover {
@@ -247,6 +257,87 @@
   }
   .header .hero .hero__img__4 {
     left: 64%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .header {
+    overflow-x: hidden;
+    background-image: url("../img/header_bg_mob.svg");
+    background-size: 104% 70%;
+    background-repeat: no-repeat;
+  }
+  .header .nav {
+    margin-bottom: 38px;
+    border: none;
+  }
+  .header .hero .hero__logo {
+    margin-bottom: 43px;
+  }
+  .header .hero .hero__img__1 {
+    display: none;
+  }
+  .header .hero .hero__img__2 {
+    position: relative;
+    left: 23%;
+    top: 80px;
+  }
+  .header .hero .hero__img__3 {
+    display: none;
+  }
+  .header .hero .hero__img__4 {
+    position: relative;
+    left: -24%;
+    bottom: 420px;
+  }
+  .header .hero .hero__button {
+    font-size: 48px;
+    margin-top: -250px;
+    font-weight: bold;
+    margin-bottom: 70px;
+  }
+  .header .hero .hero__button .hero__button__first {
+    padding: 0.3em 0.5em;
+    border: 2px solid #FFF;
+  }
+  .header .hero .hero__button .hero__button__second {
+    padding: 0.3em 1em;
+    border: 2px solid #FFF;
+  }
+  .header .hero__services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .hero__services .hero__services__title {
+    color: #22B1FF;
+    padding: 0;
+  }
+  .header .hero__services .hero__services__title .hero__services__title__up {
+    text-align: center;
+  }
+  .header .hero__services .hero__services__title .hero__services__down {
+    display: none;
+  }
+  .header .hero__services .hero__services__list {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .header .hero__services .hero__services__list .hero__services__list__button {
+    background: none;
+    color: #22B1FF;
+    padding: 0;
+    font-size: 26px;
+    float: left;
+    margin: 0;
+    margin-top: 80px;
+  }
+  .header .hero__services .hero__services__list .hero__services__list__button:focus {
+    outline: none;
   }
 }
 
@@ -597,6 +688,35 @@
   color: #22B1FF;
 }
 
+@media screen and (max-width: 720px) {
+  .materials .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .materials .flex .materials__left {
+    padding: 0;
+  }
+  .materials .flex .materials__left__img {
+    display: none;
+  }
+  .price {
+    overflow-x: hidden;
+  }
+  .price .price__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .footer {
   padding-top: 54px;
 }
@@ -701,6 +821,21 @@
   transition: all .6s ease-in-out;
 }
 
+@media screen and (max-width: 720px) {
+  .footer {
+    overflow: hidden;
+  }
+  .footer .flex .f-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @font-face {
   font-family: 'Gilroy';
   src: url("../fonts/Gilroy-Light.otf");
@@ -728,5 +863,11 @@ h1 {
 .container {
   width: 1170px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    width: 620px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

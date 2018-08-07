@@ -277,3 +277,27 @@
         }
     }
 }
+
+// MEDIA req
+
+@media screen and (max-width: 720px) {
+    .materials {
+        .flex {
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            .materials__left {
+                padding: 0;
+            }
+            .materials__left__img {
+                display: none;
+            }
+        }
+    }
+    .price {
+        overflow-x: hidden;
+        .price__list {
+            flex-direction: column;
+        }
+    }
+}
