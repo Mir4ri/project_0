@@ -70,14 +70,29 @@
 }
 
 // MEDIA req
-@media screen and (max-width: 720px) {
+
+//IPAD
+
+@media screen and (max-width: 1024px) {
     .footer {
-        overflow: hidden;
+        overflow-x: hidden;
         .flex {
             .f-contacts {
                 flex-direction: column;
                 align-items: center;
+                display: flex;
+                .f-contacts__to {
+                    padding: 0.2em;
+                }
+                .f-contacts__to--f {
+                    order: -1;
+                    padding: 0.2em;
+                    font-size: 26px;
+                }
             }
         }
     }
 }
+
+
+

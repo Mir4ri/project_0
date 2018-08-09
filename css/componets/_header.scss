@@ -219,6 +219,8 @@
 
 // Media req
 
+// laptop l
+
 @media screen and (max-width: 1440px) {
     .header {
         .hero {
@@ -241,9 +243,46 @@
     }
 }
 
-@media screen and (max-width: 720px) {
+// ipad
+
+    @media screen and (max-width: 1024px) {
+        .header {
+            overflow-x: hidden;
+            .hero {
+                .hero__img__1 {
+                    left: -5%;
+                    top: 8%;
+                }
+                .hero__img__2 {
+                    left: 72%;
+                    top: 12%;
+                }
+                .hero__img__3 {
+                    left: 5%;
+                    top: 28%;
+                }
+                .hero__img__4 {
+                    left: 62%;
+                    top: 30%;
+                }
+            }
+            .hero__services {
+                .hero__services__title {
+                    padding-right: 40px;
+                    .hero__services__title__up {
+                       padding-left: 30px;
+                    }
+                    .hero__services__down {
+                        font-size: 24px;
+                        padding-left: 36px;
+                    }
+                }
+            }
+        }
+    }
+
+@media screen and (max-width: 768px) {
     .header {
-        overflow-x: hidden;
         background-image: url("../img/header_bg_mob.svg");
         background-size: 104% 70%;
         background-repeat: no-repeat;

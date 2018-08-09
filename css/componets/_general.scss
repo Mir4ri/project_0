@@ -280,24 +280,63 @@
 
 // MEDIA req
 
-@media screen and (max-width: 720px) {
-    .materials {
-        .flex {
-            flex-direction: column;
-            align-items: center;
-            flex-wrap: wrap;
+// Ipad
+
+@media screen and (max-width: 1024px) {
+    .main {
+        .materials {
             .materials__left {
-                padding: 0;
+                padding-right: 29px;
             }
-            .materials__left__img {
-                display: none;
+        }
+        .price {
+            .price__list {
+                &::before {
+                     margin-top: -50px;
+                     font-size: 338px;
+                 }
+                .price__list__ul {
+                    .price__list__ul__items {
+                        font-size: 18px;
+                         width: 400px;
+                    }
+                }
             }
         }
     }
-    .price {
-        overflow-x: hidden;
-        .price__list {
-            flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        .materials {
+            .flex {
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+                .materials__left {
+                    padding: 0;
+                    padding-bottom: 100px;
+                    text-align: center;
+                }
+                .materials__left__img {
+                    display: none;
+                }
+                #material_svg {
+                    padding-right: 0px;
+                    display: none;
+                }
+                .materials__description {
+                    text-align: center;
+                    padding-bottom: 75px;
+                }
+            }
+        }
+        .price {
+            overflow-x: hidden;
+            .price__list {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
 }

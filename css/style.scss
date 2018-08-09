@@ -33,7 +33,16 @@ h1 {
 
 // Media req
 
-@media screen and (max-width: 720px) {
+    // Ipad
+
+    @media screen and (max-width: 1024px) {
+        .container {
+            width: 990px;
+        }
+    }
+
+
+@media screen and (max-width: 768px) {
     .container {
         width: 620px;
     }
