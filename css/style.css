@@ -837,6 +837,11 @@
   font-size: 26px;
 }
 
+.footer .flex .f-contacts .f-contacts__to--f {
+  padding: 0 2em;
+  font-size: 26px;
+}
+
 .footer .f-nav {
   padding: 0;
   margin: 0;
@@ -902,8 +907,6 @@
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
-    padding: 0.2em;
-    font-size: 26px;
   }
 }
 
