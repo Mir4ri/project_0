@@ -43,6 +43,42 @@
   transition: all .6s ease-in-out;
 }
 
+.header .nav__mob {
+  display: none;
+  position: relative;
+  margin-top: 34px;
+  left: 86%;
+}
+
+.header .nav__mob span {
+  width: 58px;
+  height: 7px;
+  border-radius: 3px;
+  background: #fff;
+  display: block;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.header .nav__mob.active span:nth-child(2) {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  opacity: 0;
+}
+
+.header .nav__mob.active span:nth-child(1) {
+  -webkit-transform: rotateY(180deg) rotateZ(45deg) translate(11px, 12px);
+          transform: rotateY(180deg) rotateZ(45deg) translate(11px, 12px);
+}
+
+.header .nav__mob.active span:nth-child(3) {
+  -webkit-transform: rotateY(180deg) rotateZ(-45deg) translate(12px, -14px);
+          transform: rotateY(180deg) rotateZ(-45deg) translate(12px, -14px);
+}
+
 .header .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,15 +331,17 @@
 @media screen and (max-width: 800px) {
   .header {
     background-image: url("../img/header_bg_mob.svg");
-    background-size: 104% 70%;
+    background-size: 104% 68%;
     background-repeat: no-repeat;
   }
   .header .nav {
-    margin-bottom: 38px;
-    border: none;
+    display: none;
+  }
+  .header .nav__mob {
+    display: block;
   }
   .header .hero .hero__logo {
-    margin-bottom: 43px;
+    margin: 43px 0;
   }
   .header .hero .hero__img__1 {
     display: none;
@@ -311,7 +349,7 @@
   .header .hero .hero__img__2 {
     position: relative;
     left: 23%;
-    top: 80px;
+    top: 110px;
   }
   .header .hero .hero__img__3 {
     display: none;
@@ -319,11 +357,14 @@
   .header .hero .hero__img__4 {
     position: relative;
     left: -24%;
-    bottom: 420px;
+    bottom: 390px;
+  }
+  .header .hero .hero__title__down {
+    font-size: 22px;
   }
   .header .hero .hero__button {
     font-size: 48px;
-    margin-top: -200px;
+    margin-top: -299px;
     font-weight: bold;
     margin-bottom: 70px;
   }
@@ -405,6 +446,10 @@
 
 .materials .flex #material_svg {
   padding-right: 42px;
+}
+
+.materials .flex .materials__description {
+  font-family: 'Gilroy', sans-serif;
 }
 
 .materials .flex .materials__description .material__description__gel-l {
@@ -758,8 +803,25 @@
     display: none;
   }
   .main .materials .flex .materials__description {
-    text-align: center;
     padding-bottom: 75px;
+  }
+  .main .materials .flex .materials__description .material__description__gel-l .materials__description__gel-l__title {
+    font-size: 32px;
+  }
+  .main .materials .flex .materials__description .material__description__gel-l .materials__description__get-l__text {
+    font-size: 24px;
+  }
+  .main .materials .flex .materials__description .materials__description__gel .materials__description__gel__title {
+    font-size: 32px;
+  }
+  .main .materials .flex .materials__description .materials__description__gel .materials__description__gel__text {
+    font-size: 24px;
+  }
+  .main .materials .flex .materials__description .materials__description__acrylic .materials__description__acrylic__title {
+    font-size: 32px;
+  }
+  .main .materials .flex .materials__description .materials__description__acrylic .materials__description__acrylic__text {
+    font-size: 24px;
   }
   .main .price {
     overflow-x: hidden;
@@ -772,6 +834,13 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .main .price .price__list .price__list__ul {
+    list-style: none;
+    padding: 0;
+  }
+  .main .price .price__list .price__list__ul .price__list__ul__items {
+    font-size: 26px;
   }
 }
 
@@ -908,6 +977,9 @@
         -ms-flex-order: -1;
             order: -1;
   }
+  .footer .f-nav .f-nav__item {
+    display: none;
+  }
 }
 
 @font-face {
@@ -948,6 +1020,12 @@ h1 {
 @media screen and (max-width: 800px) {
   .container {
     width: 620px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    width: 315px;
   }
 }
 /*# sourceMappingURL=style.css.map */

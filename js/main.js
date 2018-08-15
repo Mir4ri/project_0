@@ -1,3 +1,17 @@
+// Map
+
+    var map;
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {
+                lat: 48.922686,
+                lng: 24.710722
+            },
+            zoom: 14
+        });
+    }
+
 // Scroll    
        $('a[href*="#"]')
            .not('[href="#"]')
@@ -18,3 +32,11 @@
                    }
                }
            });
+
+// Button
+    $(document).ready(function(){
+        $('.nav__mob').click(function () {
+            $('.nav__mob').toggleClass('active')
+        })
+    })
+

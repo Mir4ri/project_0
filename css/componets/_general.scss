@@ -21,6 +21,7 @@
             padding-right: 42px;
         }
         .materials__description {
+            font-family: 'Gilroy', sans-serif;
             .material__description__gel-l {
                 padding-bottom: 63px;
                 .materials__description__gel-l__title {
@@ -326,8 +327,33 @@
                     display: none;
                 }
                 .materials__description {
-                    text-align: center;
                     padding-bottom: 75px;
+                    .material__description__gel-l {
+                        .materials__description__gel-l__title {
+                            font-size: 32px;
+                        }
+                        .materials__description__get-l__text {
+                            font-size: 24px;
+                        }
+                    }
+
+                    .materials__description__gel {
+                        .materials__description__gel__title {
+                            font-size: 32px;
+                        }
+                        .materials__description__gel__text {
+                            font-size: 24px;
+                        }
+                    }
+
+                    .materials__description__acrylic {
+                        .materials__description__acrylic__title {
+                            font-size: 32px;
+                        }
+                        .materials__description__acrylic__text {
+                            font-size: 24px;
+                        }
+                    }
                 }
             }
         }
@@ -336,6 +362,13 @@
             .price__list {
                 flex-direction: column;
                 align-items: center;
+                .price__list__ul {
+                    list-style: none;
+                    padding: 0;
+                    .price__list__ul__items {
+                        font-size: 26px;
+                    }
+                }
             }
         }
     }
