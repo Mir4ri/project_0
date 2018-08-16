@@ -116,9 +116,9 @@
             width: 460px;
             padding-bottom: 40px;
             margin-left: 65px;
-            -webkit-box-shadow: 11px 15px 22px -8px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 11px 15px 22px -8px rgba(0, 0, 0, 0.75);
-            box-shadow: 11px 15px 22px -8px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.55);
+            -moz-box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.55);
+            box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.55);
         }
         .scroll_container__1-item {
             @include bg;
@@ -373,3 +373,73 @@
         }
     }
 }
+
+// Mobile
+
+@media screen and (max-width: 420px){
+    .main {
+        .kindOfManicure {
+            .container-flex {
+                .container-flex__top-of {
+                    .container-flex__top-of__title {
+                        margin: 0;
+                        font-size: 24px;
+                        padding-bottom: 16px;
+                        width: 150px;
+                    }
+                    .container-flex__top-of__subtitle {
+                        width: 150px;
+                    }
+                }
+                .container-flex__button {
+                    background: none;
+                    border: 2px solid #FFF;
+                    color: #FFF;
+                    border-radius: 12px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    padding: 0.9em 1.2em;
+                    transition: all .3s ease;
+                    font-size: 14px;
+                    &:hover {
+                        background: #fff;
+                        color: #22B1FF;
+                        transition: all .5s ease;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .price {
+            overflow-x: hidden;
+            .price__title {
+                .price__title__pl {
+                    font-size: 42px;
+                }
+                .price__title__text {
+                    font-size: 18px;
+                }
+            }
+            .price__list {
+                flex-direction: column;
+                align-items: center;
+                &::before {
+                    font-size: 230px;
+                    transform: rotateZ(90deg);
+                }
+                .price__list__ul {
+                    list-style: none;
+                    padding: 0;
+                    .price__list__ul__items {
+                        font-size: 16px;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+    
